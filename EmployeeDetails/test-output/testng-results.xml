@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6399" started-at="2020-07-23T01:14:13 IST" finished-at="2020-07-23T01:14:19 IST">
+  <suite name="Suite" duration-ms="7488" started-at="2020-07-23T08:48:12 IST" finished-at="2020-07-23T08:48:20 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="6399" started-at="2020-07-23T01:14:13 IST" finished-at="2020-07-23T01:14:19 IST">
+    <test name="Test" duration-ms="7488" started-at="2020-07-23T08:48:12 IST" finished-at="2020-07-23T08:48:20 IST">
       <class name="RestAssured.EmployeeDetails.EmployeeDetails">
-        <test-method status="PASS" signature="verifyEmployeeAge()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@6737fd8f]" name="verifyEmployeeAge" duration-ms="3894" started-at="2020-07-23T01:14:13 IST" finished-at="2020-07-23T01:14:17 IST">
+        <test-method status="PASS" signature="verifyEmployeeAge()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@cd2dae5]" name="verifyEmployeeAge" duration-ms="4058" started-at="2020-07-23T08:48:12 IST" finished-at="2020-07-23T08:48:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeAge -->
-        <test-method status="FAIL" signature="verifyEmployeeCompany()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@6737fd8f]" name="verifyEmployeeCompany" duration-ms="397" started-at="2020-07-23T01:14:17 IST" finished-at="2020-07-23T01:14:17 IST">
+        <test-method status="FAIL" signature="verifyEmployeeCompany()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@cd2dae5]" name="verifyEmployeeCompany" duration-ms="631" started-at="2020-07-23T08:48:17 IST" finished-at="2020-07-23T08:48:17 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[ACTUAL COMPANY NAME IS : [ABC Infotech] AND EXPECTED COMPANY NAME IS : [IG Infotech] NOT EQUAL. expected [[IG Infotech]] but found [[ABC Infotech]]]]>
@@ -22,7 +22,7 @@ at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
-at RestAssured.EmployeeDetails.EmployeeDetails.verifyEmployeeCompany(EmployeeDetails.java:107)
+at RestAssured.EmployeeDetails.EmployeeDetails.verifyEmployeeCompany(EmployeeDetails.java:105)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -57,19 +57,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeCompany -->
-        <test-method status="PASS" signature="verifyEmployeeDOB()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@6737fd8f]" name="verifyEmployeeDOB" duration-ms="380" started-at="2020-07-23T01:14:17 IST" finished-at="2020-07-23T01:14:18 IST">
+        <test-method status="PASS" signature="verifyEmployeeDOB()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@cd2dae5]" name="verifyEmployeeDOB" duration-ms="570" started-at="2020-07-23T08:48:17 IST" finished-at="2020-07-23T08:48:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeDOB -->
-        <test-method status="PASS" signature="verifyEmployeeDataRetrievedMesage()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@6737fd8f]" name="verifyEmployeeDataRetrievedMesage" duration-ms="400" started-at="2020-07-23T01:14:18 IST" finished-at="2020-07-23T01:14:18 IST">
+        <test-method status="PASS" signature="verifyEmployeeDataRetrievedMesage()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@cd2dae5]" name="verifyEmployeeDataRetrievedMesage" duration-ms="646" started-at="2020-07-23T08:48:18 IST" finished-at="2020-07-23T08:48:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeDataRetrievedMesage -->
-        <test-method status="PASS" signature="verifyEmployeeRole()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@6737fd8f]" name="verifyEmployeeRole" duration-ms="473" started-at="2020-07-23T01:14:18 IST" finished-at="2020-07-23T01:14:18 IST">
+        <test-method status="PASS" signature="verifyEmployeeRole()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@cd2dae5]" name="verifyEmployeeRole" duration-ms="598" started-at="2020-07-23T08:48:18 IST" finished-at="2020-07-23T08:48:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeRole -->
-        <test-method status="PASS" signature="verifyEmployeeStatus()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@6737fd8f]" name="verifyEmployeeStatus" duration-ms="781" started-at="2020-07-23T01:14:18 IST" finished-at="2020-07-23T01:14:19 IST">
+        <test-method status="PASS" signature="verifyEmployeeStatus()[pri:0, instance:RestAssured.EmployeeDetails.EmployeeDetails@cd2dae5]" name="verifyEmployeeStatus" duration-ms="910" started-at="2020-07-23T08:48:19 IST" finished-at="2020-07-23T08:48:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeStatus -->

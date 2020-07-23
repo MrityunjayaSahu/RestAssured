@@ -27,7 +27,7 @@ public class EmployeeDetails {
 		try {
 			JsonPath jPath = new JsonPath(getEmployeeResponse());
 			int expectedStatus = jPath.getInt("status");
-			Assert.assertEquals(200, expectedStatus);
+			Assert.assertEquals(200, expectedStatus, " ACTUAL AND EXPECTED STATUS OF EMPLOYEE FAILED TO MATCH ");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return flag = false;
@@ -42,7 +42,7 @@ public class EmployeeDetails {
 		try {
 			JsonPath jPath = new JsonPath(getEmployeeResponse());
 			int expectedAge = jPath.getInt("employeeData.age");
-			Assert.assertEquals(actualAge, expectedAge);
+			Assert.assertEquals(actualAge, expectedAge, " ACTUAL AND EXPECTED AGE OF EMPLOYEE FAILED TO MATCH ");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return flag = false;
@@ -57,7 +57,7 @@ public class EmployeeDetails {
 		try {
 			JsonPath jPath = new JsonPath(getEmployeeResponse());
 			String expectedRole = jPath.getString("employeeData.role");
-			Assert.assertEquals(actualRole, expectedRole);
+			Assert.assertEquals(actualRole, expectedRole, " ACTUAL AND EXPECTED ROLE OF EMPLOYEE FAILED TO MATCH ");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return flag = false;
@@ -72,7 +72,7 @@ public class EmployeeDetails {
 		try {
 			JsonPath jPath = new JsonPath(getEmployeeResponse());
 			String expectedDOB = jPath.getString("employeeData.dob");
-			Assert.assertEquals(actualDOB, expectedDOB);
+			Assert.assertEquals(actualDOB, expectedDOB, " ACTUAL AND EXPECTED DOB OF EMPLOYEE FAILED TO MATCH ");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return flag = false;
@@ -86,8 +86,8 @@ public class EmployeeDetails {
 		String actualMsg = "data retrieved successful";
 		try {
 			JsonPath jPath = new JsonPath(getEmployeeResponse());
-			String expectedDOB = jPath.getString("message");
-			Assert.assertEquals(actualMsg, expectedDOB);
+			String expectedMsg = jPath.getString("message");
+			Assert.assertEquals(actualMsg, expectedMsg, " ACTUAL AND EXPECTED MESSAGE OF EMPLOYEE FAILED TO MATCH ");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return flag = false;
