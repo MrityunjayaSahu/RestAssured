@@ -9,27 +9,26 @@ import org.testng.annotations.Test;
 /**
  * @author Mrutyunjaya
  *
+ *	Test Scenario:
+	Following is a REST API with no parameters and its response is in Json format.  
+	
+	Endpoint = http://demo4032024.mockable.io/apitest
+	Method = GET
+	                                        
+	Assertion 1 : Validate Response Status code as 200
+	Assertion 2 : Validate Response Header for JSON response
+	Assertion 3 : Validate Response body with following data using (JsonPath/ JsonParser/ etc.) -
+	Status=200
+	Age= 25
+	Role=QA Automation Developer
+	Dob=25-02-1994
+	Message=data retrieved successful
+	Assertion 4 : Validate Response body with following data
+	              Company=ABC Infotech
+ *
  */
 
 public class EmployeeDetails {
-	
-	/**
-	 * @description This Common Method for Every Test script
-	 * @return Employee Response
-	 * @throws Exception
-	 */
-	public String getEmployeeResponse() {
-		try {
-			RestAssured.baseURI = "http://demo4032024.mockable.io";
-			String emplData = given().log().all().
-			when().get("/apitest").
-			then().log().all().extract().response().asString();
-			return emplData;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
 	
 	@Test
 	public boolean verifyEmployeeStatus() {
@@ -120,4 +119,22 @@ public class EmployeeDetails {
 		return flag;
 	}
 
+	/**
+	 * @description This is the Common Method for Every Test script
+	 * @return Employee Response
+	 * @throws Exception
+	 */
+	public String getEmployeeResponse() {
+		try {
+			RestAssured.baseURI = "http://demo4032024.mockable.io";
+			String emplData = given().log().all().
+			when().get("/apitest").
+			then().log().all().extract().response().asString();
+			return emplData;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
 }
