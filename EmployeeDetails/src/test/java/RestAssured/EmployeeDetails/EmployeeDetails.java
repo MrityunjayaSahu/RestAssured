@@ -6,8 +6,18 @@ import static io.restassured.RestAssured.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+/**
+ * @author Mrutyunjaya
+ *
+ */
+
 public class EmployeeDetails {
 	
+	/**
+	 * @description This Common Method for Every Test script
+	 * @return Employee Response
+	 * @throws Exception
+	 */
 	public String getEmployeeResponse() {
 		try {
 			RestAssured.baseURI = "http://demo4032024.mockable.io";
